@@ -1,18 +1,18 @@
-# The Road to GraphQL [Book]
+# The Road to GraphQL [Libro]
 
 [![Slack](https://slack-the-road-to-learn-react.wieruch.com/badge.svg)](https://slack-the-road-to-learn-react.wieruch.com/)
-
-The official repository for [The Road to GraphQL](https://roadtoreact.com/).
+Repositorio oficial del libro [The Road to GraphQL](https://roadtoreact.com/).
 
 ## Updates, Help and Support
 
-* Get book updates via [E-Mail](https://www.getrevue.co/profile/rwieruch) or [Twitter](https://twitter.com/rwieruch)
-* Get help, while learning React with the book or teach others, in the official [Slack Channel](https://slack-the-road-to-learn-react.wieruch.com/)
-* Find out how you can [Support the Book](https://www.robinwieruch.de/about/)
+* Obtener actualizaciones via [E-Mail](https://www.getrevue.co/profile/rwieruch) or [Twitter](https://twitter.com/rwieruch)
+* En el [Canal de Slack Oficial] podrás obtener ayuda como tambien poder ayudar a otras personas aprendiendo (https://slack-the-road-to-learn-react.wieruch.com/)
+* Descubre como puedes ayudar [colaborando](https://www.robinwieruch.de/about/)
 
-## Contribute
+## Contribuir
 
-You can help to improve the book by opening Issues and Pull Requests (PR).
+Puedes ayudar a mejorar este libro abriendo "Issues" y publicando "Pull Request"(PR)
+
 
 You can open up any PR that corrects spelling or explains a certain lesson with more detail. When writing such a technical book, you get fast blind on what needs more explanation and on what is already explained well.
 
