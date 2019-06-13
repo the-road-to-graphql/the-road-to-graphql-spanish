@@ -1,12 +1,12 @@
-# The Road to GraphQL [Book]
+# The Road to GraphQL [Libro]
 
 [![Slack](https://slack-the-road-to-learn-react.wieruch.com/badge.svg)](https://slack-the-road-to-learn-react.wieruch.com/)
 
-The official repository for [The Road to GraphQL](https://roadtoreact.com/).
+Repositorio Oficial de [The Road to GraphQL](https://roadtoreact.com/).
 
-## Updates, Help and Support
+## Actualizaciones y Soporte
 
-* Get book updates via [E-Mail](https://www.getrevue.co/profile/rwieruch) or [Twitter](https://twitter.com/rwieruch)
+* Puede obtener actualizacioens del libri por [E-Mail](https://www.getrevue.co/profile/rwieruch) o [Twitter](https://twitter.com/rwieruch)
 * Get help, while learning React with the book or teach others, in the official [Slack Channel](https://slack-the-road-to-learn-react.wieruch.com/)
 * Find out how you can [Support the Book](https://www.robinwieruch.de/about/)
 
