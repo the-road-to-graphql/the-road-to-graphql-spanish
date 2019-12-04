@@ -1,6 +1,6 @@
 # Apollo Client
 
-Apollo is an entire ecosystem built by developers as an infrastructure for GraphQL applications. You can use it on the client-side for a GraphQL client application, or server-side for a GraphQL server application. At the time of writing this tutorial, Apollo offers the richest and most popular ecosystem around GraphQL in JavaScript. There are other libraries for React applications like [Relay](http://facebook.github.io/relay) and [Urql](https://github.com/FormidableLabs/urql), but they are just for React applications, and they are not as popular as the Apollo Client. Apollo is framework agnostic, meaning you can use it with other libraries than react. It can be coupled with other libraries/frameworks like Vue and Angular as well, so everything you learn in this tutorial is likely transferable to the others.
+Apollo is an entire ecosystem built by developers as an infrastructure for GraphQL applications. You can use it on the client-side for a GraphQL client application, or server-side for a GraphQL server application. At the time of writing this tutorial, Apollo offers the richest and most popular ecosystem around GraphQL in JavaScript. There are other libraries for React applications like [Relay](http://facebook.github.io/relay) and [Urql](https://github.com/FormidableLabs/urql), but they are just for React applications, and they are not as popular as the Apollo Client. Apollo is framework agnostic, meaning you can use it with libraries other than React. It can be coupled with other libraries/frameworks like Vue and Angular as well, so everything you learn in this tutorial is likely transferable to the others.
 
 ## Starting with Apollo Boost on the Command Line
 
@@ -59,7 +59,7 @@ Remember, replace the `YOUR_GITHUB_PERSONAL_ACCESS_TOKEN` string with your perso
 touch .env
 ~~~~~~~~
 
-Simply define your environment variables in this *.env* file. In your *.env* file, paste the following key value pair whereas the naming for the key is up to you and the value has to be your personal access token from GitHub.
+Simply define your environment variables in this *.env* file. In your *.env* file, paste the following key value pair whereas the naming for the key is up to you and the value has to be your personal access token from GitHub.
 
 {title=".env",lang="javascript"}
 ~~~~~~~~
@@ -113,7 +113,8 @@ The error should disappear when you start the application from the command line,
 
 ### Exercises:
 
-* Confirm your [source code for the last section](https://github.com/the-road-to-graphql/node-apollo-boost-github-graphql-api/tree/fd067ec045861e9832cc0b202b25f8d8efd651c9)
+* Confirm your [source code for the last section](http://bit.ly/2D2pRSh)
+  * Confirm the [changes from the last section](http://bit.ly/2VqyY6i)
 * Read more about [other view integrations such as Angular and Vue](https://www.apollographql.com/docs/react/integrations.html)
 * Invest a few minutes of your time and take the [quiz](https://www.surveymonkey.com/r/5T3W9BB)
 
@@ -182,11 +183,12 @@ That's all there is to sending a query with the Apollo Client.  As noted, Apollo
 
 The requested information from the GraphQL query can be found in the `data` object. There, you will find the `organization` object with its `name` and `url` fields. The Apollo Client automatically requests the GraphQL [meta field](http://graphql.org/learn/queries/#meta-fields) `__typename`. The meta field can be used by the Apollo Client as an identifier, to allow caching and optimistic UI updates.
 
-More meta information about the request can be found next to the `data` object. It shows whether the data is still loading, as well as specific details about the [network status](https://github.com/apollographql/apollo-client/blob/master/packages/apollo-client/src/core/networkStatus.ts), and see whether the requested data is stale on the server-side.
+More meta information about the request can be found next to the `data` object. It shows whether the data is still loading, as well as specific details about the [network status](https://github.com/apollographql/apollo-client/blob/master/packages/apollo-client/src/core/networkStatus.ts), and whether the requested data is stale on the server-side.
 
 ### Exercises:
 
-* Confirm your [source code for the last section](https://github.com/the-road-to-graphql/node-apollo-boost-github-graphql-api/tree/7a800c78e0e09f84b47f4e714abac1d23f5e599e)
+* Confirm your [source code for the last section](http://bit.ly/2Da7Em3)
+  * Confirm the [changes from the last section](http://bit.ly/2VnYqcV)
 * Explore GitHub's GraphQL API
   * Get comfortable navigating through their documentation
   * Add other fields for the `organization` field
@@ -265,11 +267,12 @@ client
   .then(console.log);
 ~~~~~~~~
 
-You have seen a similar query structure in the application we created earlier, so this section has a couple of exercises for you to test the GraphQL skills you've learned. Solving the exercises will fortify your GraphQL skills you can focus on connecting the Apollo Client to your React application. You will find all the solutions to the exercises in a GitHub repository for this application at the end of the exercises, but you should consider working it out on your own first.
+You have seen a similar query structure in the application we created earlier, so this section has a couple of exercises for you to test the GraphQL skills you've learned. Solving the exercises will fortify your GraphQL skills, so that you can later focus on connecting the Apollo Client to your React application without any obstacles. You will find all the solutions to the exercises in a GitHub repository for this application at the end of the exercises, but you should consider working it out on your own first.
 
 ### Exercises:
 
-* Confirm your [source code for the last section](https://github.com/the-road-to-graphql/node-apollo-boost-github-graphql-api/tree/a5b1ce61a3dae3ead1b9795f5bf6e0d090c5d24f)
+* Confirm your [source code for the last section](http://bit.ly/2CYRr2V)
+  * Confirm the [changes from the last section](http://bit.ly/2Vneiw4)
 * Explore GitHub's GraphQL API
   * Extend the `repositories` list field by querying an ordered list of repositories which is ordered by the number of stargazers
 * Extract the content of a repository `node` to a GraphQL a reusable fragment
@@ -299,7 +302,7 @@ const ADD_STAR = gql`
 `;
 ~~~~~~~~
 
-The identifier for the repository is required, or GitHub's GraphQL server wouldn't know which repository you want to star. In the next code snippet, the Apollo Client is used to star a specific GitHub repository with a given identifier. The identifier can be retrieved by adding the `id` field to your repository `node` field in the query. Use the `mutate()` method on the Apollo Client to send the mutation in a `mutation` and `variables` payload. Anything can be done with the result to fit your application, but In this case, the result it is simply logged in the command line.
+The identifier for the repository is required, or GitHub's GraphQL server wouldn't know which repository you want to star. In the next code snippet, the Apollo Client is used to star a specific GitHub repository with a given identifier. The identifier can be retrieved by adding the `id` field to your repository `node` field in the query. Use the `mutate()` method on the Apollo Client to send the mutation in a `mutation` and `variables` payload. Anything can be done with the result to fit your application, but in this case, the result it is simply logged in the command line.
 
 {title="src/index.js",lang="javascript"}
 ~~~~~~~~
@@ -321,7 +324,8 @@ Remember, Apollo Client can be used as a standalone GraphQL client without conne
 
 ### Exercises:
 
-* Confirm your [source code for the last section](https://github.com/the-road-to-graphql/node-apollo-boost-github-graphql-api/tree/ed3363c9981c552223117e5e775bb8c535f79ff5)
+* Confirm your [source code for the last section](http://bit.ly/2CYSgZz)
+  * Confirm the [changes from the last section](http://bit.ly/2VnNsUB)
 * Implement the `removeStar` mutation next to the `addStar` mutation
 * Invest three minutes of your time and take the [quiz](https://www.surveymonkey.com/r/5XMNFSY)
 
